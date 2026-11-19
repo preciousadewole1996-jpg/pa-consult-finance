@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Consultation | P&A Consult</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <span class="brand-badge">P&amp;A</span>
+        <span class="brand-name">P&amp;A Consult</span>
+      </a>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#plans">Plans</a>
+        <a href="signup.html" class="active nav-cta">Book Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section section-muted form-page">
+    <div class="container form-wrapper">
+
+      <!-- Consultation Sign-Up Form -->
+      <div id="form-card" class="form-card">
+        <h2>ADVISORY CONSULTATION SIGN-UP</h2>
+        <p class="form-subtitle">Complete your details below and Precious Adewole will reach out to confirm your session.</p>
+
+        <form id="consultation-form">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" placeholder="e.g. Sarah Jenkins" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+44 7700 900077" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="planSelect">Selected Advisory Plan *</label>
+            <select id="planSelect" name="planSelect" required>
+              <option value="Community Starter">Community Starter (Free / session)</option>
+              <option value="Budget Essentials">Budget Essentials (&pound;25 / month)</option>
+              <option value="Household Growth" selected>Household Growth (&pound;50 / month)</option>
+              <option value="Full Advisory">Full Advisory (&pound;95 / month)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="goals">Primary Financial Goal</label>
+            <textarea id="goals" name="goals" rows="4" placeholder="Tell us briefly about your household budgeting or savings goals..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+        </form>
+      </div>
+
+      <!-- Confirmation State (Matches "WE'VE GOT YOUR REQUEST!" in Video) -->
+      <div id="confirmation-card" class="form-card confirmation-box hidden" role="status" aria-live="polite">
+        <div class="confirm-icon">&#10003;</div>
+        <h2>WE'VE GOT YOUR REQUEST!</h2>
+        <p id="confirmation-message">
+          Thank you for reaching out to P&amp;A Consult. We have received your consultation details and will contact you within 24 hours.
+        </p>
+        <a href="index.html" class="btn btn-primary">Return to Home</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>P&amp;A CONSULT</h4>
+        <p>Empowering low-income households with clear budgeting strategies, financial inclusion, and sustainable economic growth.</p>
+      </div>
+      <div>
+        <h4>OFFICE ADDRESS</h4>
+        <p>University Centre Peterborough<br />Park Crescent, Peterborough<br />PE1 4DZ</p>
+      </div>
+      <div>
+        <h4>GET IN TOUCH</h4>
+        <p>Email: <a href="mailto:preciousadewole1996@gmail.com">preciousadewole1996@gmail.com</a></p>
+        <p>Phone: <a href="tel:+441733213213">+44 1733 213213</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 P&amp;A Consult &bull; Designed for Sustainable Financial Growth</p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
